@@ -29,7 +29,7 @@ export default function Home() {
               <a href="/work" className="btn btn-primary">
                 Explore my work
               </a>
-              <a href="/contact" className="btn btn-outline">
+              <a href="/simplecontact" className="btn btn-outline">
                 Let's talk
               </a>
             </div>
@@ -151,7 +151,7 @@ export default function Home() {
               <a href="/about" className="btn btn-primary">
                 About me
               </a>
-              <a href="/contact" className="btn btn-outline">
+              <a href="/simplecontact" className="btn btn-outline">
                 Work with me
               </a>
             </div>
