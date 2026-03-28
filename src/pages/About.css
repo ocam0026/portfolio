@@ -1,0 +1,199 @@
+/* ============================================================
+   About Page
+   ============================================================ */
+
+.about-page {
+  padding-top: 5rem;
+}
+
+/* ── Hero ── */
+.about-page__hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--sp-20) var(--gutter) var(--sp-24);
+}
+
+@media (max-width: 860px) {
+  .about-page__hero {
+    grid-template-columns: 1fr;
+  }
+  .about-page__photos {
+    order: -1;
+  }
+}
+
+/* ── Bio text ── */
+.about-page__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  color: var(--clr-ink);
+  margin-bottom: 1.5rem;
+}
+
+.about-page__bio p {
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+  color: var(--clr-ink-muted);
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+}
+
+.about-page__bio-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.25rem;
+}
+
+/* ── Photo stack ── */
+.about-page__photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.75rem;
+}
+
+.about-page__photo {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--clr-purple-soft);
+  position: relative;
+  border: 1px solid var(--clr-border);
+}
+
+.about-page__photo:nth-child(1) {
+  background: none;
+  grid-column: span 2;
+  border: none;
+}
+.about-page__photo:nth-child(2) {
+  aspect-ratio: 3 / 4;
+}
+.about-page__photo:nth-child(3) {
+  aspect-ratio: 3 / 4;
+}
+
+.about-page__photo-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Skills section ── */
+.about-page__skills {
+  background: var(--clr-surface-2);
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  padding: var(--sp-24) var(--gutter);
+}
+
+.about-page__skills-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.about-page__skills-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
+  margin-bottom: var(--sp-16);
+}
+
+@media (max-width: 640px) {
+  .about-page__skills-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-page__skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.about-page__skill-card {
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg);
+  padding: 1.75rem;
+  transition:
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+.about-page__skill-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--clr-purple-light);
+}
+
+.about-page__skill-icon {
+  font-size: 1.3rem;
+  color: var(--clr-purple);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-page__skill-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--clr-ink);
+  margin-bottom: 1rem;
+}
+
+.about-page__skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* ── Fun facts / values strip ── */
+.about-page__values {
+  padding: var(--sp-24) var(--gutter);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.about-page__values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.about-page__value {
+  padding: 1.5rem;
+  border-radius: var(--r-lg);
+  background: var(--clr-purple-soft);
+  border: 1px solid var(--clr-purple-mid);
+}
+
+.about-page__value-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.about-page__value-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-ink);
+  margin-bottom: 0.4rem;
+}
+
+.about-page__value-desc {
+  font-size: 0.85rem;
+  color: var(--clr-ink-muted);
+  line-height: 1.7;
+}
