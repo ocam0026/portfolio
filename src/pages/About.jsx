@@ -98,7 +98,7 @@ export default function About() {
             </p>
 
             <div className="about-page__bio-actions reveal reveal-d3">
-              <a href="/contact" className="btn btn-primary">
+              <a href="/simplecontact" className="btn btn-primary">
                 Get in touch
               </a>
               {/* <a
