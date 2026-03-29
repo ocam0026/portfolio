@@ -61,7 +61,7 @@ export default function ContactCTA() {
         </h2>
         <p className="contact-cta__sub reveal reveal-d2">
           Whether you have a project in mind, a question, or just want to say
-          hello — my inbox is always open.
+          hello, my inbox is always open.
         </p>
 
         <div
