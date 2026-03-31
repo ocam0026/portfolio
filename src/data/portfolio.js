@@ -344,10 +344,12 @@ export const skills = {
     title: "Tools",
     items: [
       "Figma",
+      "Stitch",
       "Adobe Illustrator",
       "Adobe InDesign",
       "Adobe Photoshop",
       "Framer",
+      "AI prompting",
     ],
   },
   development: {
