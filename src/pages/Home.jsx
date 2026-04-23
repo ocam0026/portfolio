@@ -18,12 +18,12 @@ export default function Home() {
         <div className="hero__inner">
           <div>
             <h1 className="hero__title">
-              UI/UX
+              Diana Ocampo
               <br />
-              <em>Designer</em>
+              <em>UI/UX Designer</em>
             </h1>
             <p className="hero__sub">
-              Every great design tells a story, get to know mine
+              AI-first designer, human-centered thinking
             </p>
             <div className="hero__actions">
               <a href="/work" className="btn btn-primary">

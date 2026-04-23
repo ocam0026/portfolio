@@ -21,7 +21,7 @@ export default function Nav() {
       aria-label="Main navigation"
     >
       <a href="/" className="nav__logo">
-        Diana Ocampo
+        D.O.
       </a>
 
       <button

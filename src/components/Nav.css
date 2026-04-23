@@ -1,11 +1,11 @@
 .nav {
   position: fixed;
-  top: 20px; /* 👈 float away from top */
+  top: 20px; 
   left: 50%;
-  transform: translateX(-50%); /* 👈 center horizontally */
+  transform: translateX(-50%); 
 
-  width: calc(100% - 2rem); /* 👈 margin on sides */
-  max-width: 1100px; /* 👈 keeps it compact */
+  width: calc(100% - 2rem); 
+  max-width: 1100px;
 
   z-index: 100;
   display: flex;
