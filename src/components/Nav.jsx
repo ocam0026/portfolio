@@ -4,6 +4,7 @@ import { useScrolled } from "../hooks";
 import "./Nav.css";
 
 const links = [
+  { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
   { href: "/about", label: "About" },
   { href: "/simplecontact", label: "Contact" },

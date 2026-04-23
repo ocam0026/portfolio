@@ -1,20 +1,28 @@
 .nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 20px; /* 👈 float away from top */
+  left: 50%;
+  transform: translateX(-50%); /* 👈 center horizontally */
+
+  width: calc(100% - 2rem); /* 👈 margin on sides */
+  max-width: 1100px; /* 👈 keeps it compact */
+
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem var(--gutter);
-  background: rgba(253, 252, 255, 0.82);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid transparent;
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition);
+
+  padding: 0.9rem 1.5rem;
+
+ background: rgba(253, 252, 255, 0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 999px; /* 👈 pill shape */
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  transition: all var(--transition);
 }
 
 .nav.scrolled {
