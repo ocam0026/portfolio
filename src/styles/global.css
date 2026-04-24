@@ -113,7 +113,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--clr-purple);
+  color: var(--clr-purple-dark);
   margin-bottom: var(--sp-4);
 }
 

@@ -165,11 +165,93 @@
 .home-work {
   background: var(--clr-surface);
   padding: var(--sp-24) var(--gutter);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Remove ::before and ::after entirely */
+
+.home-work__circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+  transition: transform 0.12s linear;
+  z-index: 0;
+}
+
+.home-work__circle--1 {
+  width: 550px;
+  height: 550px;
+  top: -80px;       /* ← less negative so more is visible */
+  right: -80px;     /* ← less negative so more is visible */
+  background: #cbb8f0;   /* ← darker so it's clearly visible */
+  opacity: 1;
+}
+
+/* Circle 2 — medium, bottom left */
+.home-work__circle--2 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  left: -80px;
+  background: var(--clr-purple-light);
+  opacity: 1;
+}
+
+/* Circle 3 — medium, centre */
+.home-work__circle--3 {
+  width: 180px;
+  height: 180px;
+  top: 48%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background: var(--clr-purple-mid);
+  opacity: 1;
+}
+
+/* Circle 4 — small, top left */
+.home-work__circle--4 {
+  width: 120px;
+  height: 120px;
+  top: 30px;
+  left: 60px;
+  background: #e4d8f8;
+  opacity: 1;
+}
+
+/* Circle 5 — medium, bottom right */
+.home-work__circle--5 {
+  width: 220px;
+  height: 220px;
+  bottom: 20px;
+  right: 80px;
+  background: #ece5fb;
+  opacity: 1;
+}
+
+.home-work__circle--6 {
+  width: 80px;
+  height: 80px;
+  top: 55%;
+  right: 18%;
+  background: #d8caf5;
+  opacity: 1;
+}
+
+.home-work__circle--8 {
+  width: 140px;
+  height: 140px;
+  top: 10px;
+  left: 65%;
+  background: #ede5fc;
+  opacity: 1;
+}
 .home-work__inner {
   max-width: var(--max-w);
   margin: 0 auto;
+  position: relative;  /* ← add this */
+  z-index: 1;  
 }
 
 .home-work__header {
@@ -179,6 +261,28 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 3rem;
+}
+
+.home-work__header .btn-ghost {
+  color: var(--clr-ink)
+}
+
+.home-work__header .display-title2{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--clr-purple);
+  margin-bottom: var(--sp-4);
+}
+
+.home-work_header_title {
+  display: flex;
+  /* align-items: start; */
+  justify-content: space-between;
+  gap: 0.75rem
 }
 
 /* Asymmetric 12-col grid */

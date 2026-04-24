@@ -1,5 +1,6 @@
-import { useScrollReveal } from "../hooks";
+import { useScrollReveal, useScrolled } from "../hooks";
 import { projects, skills } from "../data/portfolio";
+import { useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ContactCTA from "../components/ContactCTA";
 import "./Home.css";
@@ -7,6 +8,34 @@ import "./Home.css";
 // ── Home ──────────────────────────────────────────────────────────────────────
 export default function Home() {
   useScrollReveal();
+
+  useEffect(() => {
+  const section  = document.querySelector(".home-work");
+  const circle1  = document.querySelector(".home-work__circle--1");
+  const circle2  = document.querySelector(".home-work__circle--2");
+  const circle3  = document.querySelector(".home-work__circle--3");
+  const circle4  = document.querySelector(".home-work__circle--4");
+  const circle5  = document.querySelector(".home-work__circle--5");
+  const circle6  = document.querySelector(".home-work__circle--6");
+  const circle7  = document.querySelector(".home-work__circle--7");
+  const circle8  = document.querySelector(".home-work__circle--8");
+  if (!section || !circle1 || !circle2 || !circle3) return;
+
+  const handleScroll = () => {
+    const rect     = section.getBoundingClientRect();
+    const progress = Math.max(0, Math.min(1, -rect.top / rect.height));
+    circle1.style.transform = `translateY(${progress * -80}px) scale(${1 + progress * 0.12})`;
+    circle2.style.transform = `translateY(${progress *  50}px) scale(${1 + progress * 0.08})`;
+    circle3.style.transform = `translateY(${progress * -35}px) scale(${1 + progress * 0.06})`;
+    circle4.style.transform = `translateY(${progress *  60}px) scale(${1 + progress * 0.07})`;
+    circle5.style.transform = `translateY(${progress * -45}px) scale(${1 + progress * 0.05})`;
+    circle6.style.transform = `translateY(${progress *  30}px) scale(${1 + progress * 0.04})`;
+    circle8.style.transform = `translateY(${progress *  40}px) scale(${1 + progress * 0.06})`;
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <main id="main-content" className="page-enter">
@@ -53,13 +82,25 @@ export default function Home() {
 
       {/* ── Work preview ── */}
       <section className="home-work" aria-label="Selected work">
+        <div className="home-work__circle home-work__circle--1" aria-hidden="true" />
+  <div className="home-work__circle home-work__circle--2" aria-hidden="true" />
+  <div className="home-work__circle home-work__circle--3" aria-hidden="true" />
+  <div className="home-work__circle home-work__circle--4" aria-hidden="true" />
+  <div className="home-work__circle home-work__circle--5" aria-hidden="true" />
+  <div className="home-work__circle home-work__circle--6" aria-hidden="true" />
+  <div className="home-work__circle home-work__circle--8" aria-hidden="true" />
         <div className="home-work__inner">
           <div className="home-work__header">
             <div>
               <p className="label reveal">Selected Work</p>
+              <div className="home-work_header_title">
               <h2 className="display-title reveal reveal-d1">
-                Projects I'm proud of
+                Projects I'm
               </h2>
+              <h2 className="display-title2 reveal reveal-d1">
+                proud of
+              </h2>
+              </div>
             </div>
             <a href="/work" className="btn btn-ghost reveal">
               View all projects{" "}
