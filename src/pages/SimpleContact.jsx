@@ -61,7 +61,7 @@ export default function SimpleContact() {
         </h2>
         <p className="simplecontact-cta__sub">
           Whether you have a project in mind, a question, or just want to say
-          hello — my inbox is always open.
+          hello, my inbox is always open.
         </p>
 
         <div

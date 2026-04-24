@@ -26,6 +26,10 @@ function CaseBody({ project }) {
     <div className="case__body">
       {/* Overview */}
       <div className="case__overview reveal">
+        <div className="case__role">
+          <span className="case__role-label">My Role</span>
+          <span className="case__role-value">{project.role}</span>
+        </div>
         <h2 className="case__overview-title">
           {project.id === "algonquingo"
             ? "A campus safety app for Algonquin College"
@@ -35,13 +39,9 @@ function CaseBody({ project }) {
                 ? "A two-sided app for students and tutors"
                 : "A platform designed for book lovers"}
         </h2>
-
         <p className="case__overview-body">{project.overview}</p>
 
-        <div className="case__role">
-          <span className="case__role-label">My Role</span>
-          <span className="case__role-value">{project.role}</span>
-        </div>
+        
       </div>
       {project.figmaEmbed && (
         <div className="case__figma reveal">
@@ -359,6 +359,12 @@ export default function WorkDetail() {
 
       {/* ── Header ── */}
       <header className="case__header">
+        {project.banner && (
+  <div className="case__banner reveal">
+    <span className="case__banner-icon">🏆</span>
+    {project.banner}
+  </div>
+)}
         <div className="case__meta" role="list" aria-label="Project details">
           <div className="case__meta-item" role="listitem">
             <p className="case__meta-label">Client</p>

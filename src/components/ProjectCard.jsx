@@ -33,6 +33,11 @@ export default function ProjectCard({ project, delay = 0 }) {
       className={`project-card reveal${delayClass}`}
       aria-label={`View case study: ${project.title} — ${project.subtitle}`}
     >
+      {project.featured && (
+        <div className="project-card__badge">
+          🏆 Featured Project
+        </div>
+      )}
       <div className="project-card__thumb">
         <Thumbnail project={project} />
       </div>

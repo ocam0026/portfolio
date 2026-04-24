@@ -126,3 +126,26 @@
 .project-card:hover .project-card__arrow {
   gap: 0.6rem;
 }
+
+.project-card {
+  position: relative; /* needed for badge positioning */
+}
+
+.project-card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--clr-surface);
+  border: 1px solid rgba(107, 71, 200, 0.2);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-purple-dark);
+  box-shadow: 0 2px 8px rgba(107, 71, 200, 0.12);
+  letter-spacing: 0.02em;
+}

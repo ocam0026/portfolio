@@ -5,9 +5,11 @@
 export const projects = [
   {
     id: "algonquingo",
+    featured: true,
     tag: "Algonquin College",
     title: "Algonquin GO",
     subtitle: "Case Study",
+    banner: "First runner-up - Algonquin Tech Showcase",
     shortDesc:
       "A campus safety app for Algonquin College students and staff. A 14-week group project where I had the opportunity to lead the design team to create an app that connects users with security services anytime, anywhere on campus.",
     image: "/img/algonquingoapp.png",
