@@ -169,6 +169,7 @@ export const projects = [
     tag: "Personal Project",
     title: "Mentora",
     subtitle: "Case Study",
+    ai: true,
     shortDesc:
       "A 10-week solo project creating an intuitive all-in-one tutoring app. Mentora is designed as a two-sided platform, allowing users to sign up as students or tutors, each with tailored workflows and interfaces.",
     image: "/img/mentora.png",

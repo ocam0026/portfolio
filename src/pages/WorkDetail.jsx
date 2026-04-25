@@ -45,7 +45,7 @@ function CaseBody({ project }) {
       </div>
       {project.figmaEmbed && (
         <div className="case__figma reveal">
-          <p className="case__eyebrow">Interactive Prototype</p>
+          <p className="case__section-heading">Interactive Prototype</p>
           <iframe
             src={project.figmaEmbed}
             allowFullScreen

@@ -38,6 +38,11 @@ export default function ProjectCard({ project, delay = 0 }) {
           🏆 Featured Project
         </div>
       )}
+      {project.ai && (
+        <div className="project-card__badge">
+          🤖 AI Feature
+        </div>
+      )}
       <div className="project-card__thumb">
         <Thumbnail project={project} />
       </div>
