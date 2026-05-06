@@ -41,24 +41,24 @@ export const projects = [
             name: "Wayfinder",
             body: "Our solution to campus navigation offered two input modes: (1) manual entry of a starting point and destination, guided by directional cards; and (2) QR code scanning pasted around campus to set a starting point, with the destination set manually (Phase 2). \n\n Due to technical limitations from the development side, we were not able to have a map or get the live location of the user for phase 1",
             images: [
-              { src: "/img/wayfinder1.png", alt: "Wayfinder screen 1" },
-              { src: "/img/wayfinder2.png", alt: "Wayfinder screen 2" },
+              { src: "/img/Wayfinder.png", alt: "Wayfinder screens" },
+              // { src: "/img/wayfinder2.png", alt: "Wayfinder screen 2" },
             ],
           },
           {
             name: "Reports",
             body: "Users can submit safety incidents and lost-item reports by completing a form that routes directly to the admin portal, keeping the workflow fast and intuitive.",
             images: [
-              { src: "/img/reports1.png", alt: "Reports screen 1" },
-              { src: "/img/reports2.png", alt: "Reports screen 2" },
+              { src: "/img/Reports copy.png", alt: "Reports screens" },
+              // { src: "/img/reports2.png", alt: "Reports screen 2" },
             ],
           },
           {
             name: "Events",
             body: "An Events feature requested by the client for user retention. Students can sign up to campus events created by the security department, keeping the community engaged with safety initiatives.",
             images: [
-              { src: "/img/events1.png", alt: "Events screen 1" },
-              { src: "/img/events2.png", alt: "Eventsscreen 2" },
+              { src: "/img/Events.png", alt: "Events screens" },
+              // { src: "/img/events2.png", alt: "Eventsscreen 2" },
             ],
           },
         ],
@@ -70,17 +70,17 @@ export const projects = [
           {
             body: "1. We added extra visual cues to let the user know the SOS button is long press, before the only hint they had was the coloured progress bar.",
             images: [
-              { src: "/img/SOS1.png", alt: "SOS button version 1" },
-              { src: "/img/SOS2.png", alt: "SOS button version 2" },
+              { src: "/img/SOS_b&a.png", alt: "SOS button before and after" },
+              // { src: "/img/SOS2.png", alt: "SOS button version 2" },
             ],
           },
           {
             body: "2. To make the wayfinder screen more engaging, we added an Amenitites list with some of the most pupular places in campus, and a Saved places feature so users can have quick access to their most frequented places",
             images: [
-              { src: "/img/wayfinderpre1.png", alt: "wayfinder version 1" },
-              { src: "/img/wayfinderpre2.png", alt: "wayfinder version 1" },
-              { src: "/img/wayfinderafter1.png", alt: "wayfinder version 2" },
-              { src: "/img/wayfinderafter2.png", alt: "wayfinder version 2" },
+              { src: "/img/Wayfinder_b&a.png", alt: "wayfinder before and after" },
+              // { src: "/img/wayfinderpre2.png", alt: "wayfinder version 1" },
+              // { src: "/img/wayfinderafter1.png", alt: "wayfinder version 2" },
+              // { src: "/img/wayfinderafter2.png", alt: "wayfinder version 2" },
             ],
           },
         ],

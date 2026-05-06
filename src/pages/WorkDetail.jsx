@@ -43,7 +43,7 @@ function CaseBody({ project }) {
 
         
       </div>
-      {project.figmaEmbed && (
+      {/* {project.figmaEmbed && (
         <div className="case__figma reveal">
           <p className="case__section-heading">Interactive Prototype</p>
           <iframe
@@ -53,7 +53,7 @@ function CaseBody({ project }) {
             className="case__figma-iframe"
           />
         </div>
-      )}
+      )} */}
       {/* Sections */}
       {project.sections.map((sec, i) => (
         <div key={i} className={`case__section reveal reveal-d${(i % 3) + 1}`}>
@@ -104,9 +104,9 @@ function SectionImages({ project, sectionIndex }) {
           className="case__img-row case__img-row--3"
           aria-label="User personas"
         >
-          <img src="/img/zayn.png" alt="Student user 1 image" />
-          <img src="/img/jackie.png" alt="Student user 2 image" />
-          <img src="/img/marcus.png" alt="Student user 2 image" />
+          <img src="/img/acGoAppPersonas.png" alt="Algonquin GO Primary personas" />
+          {/* <img src="/img/jackie.png" alt="Student user 2 image" />
+          <img src="/img/marcus.png" alt="Student user 2 image" /> */}
         </div>
       );
     if (sectionIndex === 1)
@@ -115,9 +115,9 @@ function SectionImages({ project, sectionIndex }) {
           className="case__img-row case__img-row--3"
           aria-label="Competitive analysis"
         >
-          <img src="/img/mobileac.png" alt="Algonquin mobile safety app" />
-          <img src="/img/uottawa.png" alt="University of Ottawa safety app" />
-          <img src="/img/svu.png" alt="SVU safety app" />
+          <img src="/img/ACGO_productresearch.png" alt="Algonquin GO product research" />
+          {/* <img src="/img/uottawa.png" alt="University of Ottawa safety app" />
+          <img src="/img/svu.png" alt="SVU safety app" /> */}
         </div>
       );
     if (sectionIndex === 2)
@@ -125,7 +125,7 @@ function SectionImages({ project, sectionIndex }) {
         <>
           <div className="case__img-row" aria-label="Information architecture">
             <img
-              src="/img/IA_AlgonquinApp.png"
+              src="/img/ACGO_IA.png"
               alt="Algonquin GO app information architecture"
             />
           </div>
@@ -135,14 +135,14 @@ function SectionImages({ project, sectionIndex }) {
       return (
         <>
           <div
-            className="case__img-row case__img-row--2"
+            className="case__img-row case__img-row--3"
             aria-label="Wireframes"
           >
             <img
-              src="/img/wireframemap.png"
-              alt="Algonquin GO app wireframe map"
+              src="/img/ACGO_wireframes.png"
+              alt="Algonquin GO app wireframes"
             />
-            <img
+            {/* <img
               src="/img/wireframereports.png"
               alt="Algonquin GO app wireframe report"
             />
@@ -153,7 +153,7 @@ function SectionImages({ project, sectionIndex }) {
             <img
               src="/img/wireframesos.png"
               alt="Algonquin GO app wireframe sos call"
-            />
+            /> */}
           </div>
         </>
       );
@@ -378,31 +378,42 @@ export default function WorkDetail() {
         </h1>
       </header>
 
-      {/* ── Cover image ── */}
-      <div className="case__cover reveal">
-        <div className="case__cover-inner">
-          {project.image ? (
-            <img
-              src={project.image}
-              alt={project.imageFallbackLabel}
-              className="case__cover-img"
-              loading="eager"
-              decoding="async"
-            />
-          ) : (
-            <div
-              className="case__cover-placeholder"
-              role="img"
-              aria-label={project.imageFallbackLabel}
-            >
-              <span className="case__cover-placeholder-label">
-                {project.title} — {project.subtitle}
-              </span>
-            </div>
-          )}
+      {/* ── Cover: Figma embed if available, else image ── */}
+{project.figmaEmbed ? (
+  <div className="case__figma reveal">
+    <p className="case__section-heading">Interactive Prototype</p>
+    <iframe
+      src={project.figmaEmbed}
+      allowFullScreen
+      loading="lazy"
+      className="case__figma-iframe"
+    />
+  </div>
+) : (
+  <div className="case__cover reveal">
+    <div className="case__cover-inner">
+      {project.image ? (
+        <img
+          src={project.image}
+          alt={project.imageFallbackLabel}
+          className="case__cover-img"
+          loading="eager"
+          decoding="async"
+        />
+      ) : (
+        <div
+          className="case__cover-placeholder"
+          role="img"
+          aria-label={project.imageFallbackLabel}
+        >
+          <span className="case__cover-placeholder-label">
+            {project.title} — {project.subtitle}
+          </span>
         </div>
-      </div>
-
+      )}
+    </div>
+  </div>
+)}
       {/* ── Body ── */}
       <CaseBody project={project} />
 

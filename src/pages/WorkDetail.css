@@ -85,11 +85,19 @@
 }
 
 .case__cover-inner {
-  aspect-ratio: 16 / 8;
+  aspect-ratio: unset;
+  height: 850px;
   border-radius: var(--r-lg);
   overflow: hidden;
   background: var(--clr-purple-soft);
   box-shadow: var(--shadow-lg);
+  padding: 0.5rem
+}
+
+@media (max-width: 768px) {
+  .case__cover-inner {
+    height: 420px;
+  }
 }
 
 /* Real cover image */
@@ -270,9 +278,9 @@
 .case__img-row--2 {
   grid-template-columns: 1fr 1fr;
 }
-.case__img-row--3 {
+/* .case__img-row--3 {
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 @media (max-width: 600px) {
   .case__img-row--2,
@@ -282,7 +290,9 @@
 }
 
 .case__figma {
-  margin: 4rem 0;
+  max-width: var(--max-w);
+  margin: 0 auto 2rem;
+  padding: 0 var(--gutter);
 }
 
 .case__figma-iframe {
