@@ -164,24 +164,24 @@ function SectionImages({ project, sectionIndex }) {
     if (sectionIndex === 0)
       return (
         <div className="case__img-row" aria-label="User intervies and personas">
-          <img src="/img/erica.png" alt="Secondary user" />
+          <img src="/img/ACGO_secondarypersona.png" alt="Secondary user" />
         </div>
       );
     if (sectionIndex === 1)
       return (
         <div
-          className="case__img-row case__img-row--2"
+          className="case__img-row case__img-row--3"
           aria-label="A glance to the current portal"
         >
-          <img src="/img/oldportal1.png" alt="Previous admin portal" />
-          <img src="/img/oldportal2.png" alt="Previous admin portal" />
+          <img src="/img/OldPortal.png" alt="Previous admin portal" />
+          {/* <img src="/img/oldportal2.png" alt="Previous admin portal" /> */}
         </div>
       );
     if (sectionIndex === 2)
       return (
         <div className="case__img-row" aria-label="Information Architecture">
           <img
-            src="/img/IA_AlgonquinAdmin.png"
+            src="/img/Adminportal_IA.png"
             alt="Admin portal Information Architecture"
           />
         </div>
@@ -190,17 +190,17 @@ function SectionImages({ project, sectionIndex }) {
       return (
         <>
           <div
-            className="case__img-row case__img-row--2"
+            className="case__img-row case__img-row--3"
             aria-label="Wireframes"
           >
             <img
-              src="/img/adminwireframe1.png"
-              alt="Algonquin GO admin portal dashboard wireframe"
+              src="/img/Admin_wireframes.png"
+              alt="Algonquin GO admin portal wireframes"
             />
-            <img
+            {/* <img
               src="/img/adminwireframe2.png"
               alt="Algonquin GO admin portal communications wireframe"
-            />
+            /> */}
           </div>
         </>
       );
@@ -210,8 +210,8 @@ function SectionImages({ project, sectionIndex }) {
           className="case__img-row case__img-row--3"
           aria-label="improvements"
         >
-          <img src="/img/improvement1.png" alt="Create alert before" />
-          <img src="/img/improvement2.png" alt="Create alert after" />
+          <img src="/img/Alert_b&a.png" alt="Create alert before" />
+          {/* <img src="/img/improvement2.png" alt="Create alert after" /> */}
         </div>
       );
   }
