@@ -286,10 +286,10 @@ export const projects = [
             body: "The home screen acts as a personalised feed showing trending book clubs and posts tailored to the user's preferences. A 'Streaks' feature encourages daily reading habits and supports engagement and retention.",
             images: [
               {
-                src: "/img/bookhome.png",
+                src: "/img/BN_Home.png",
                 alt: "Book Nook home screen",
               },
-              { src: "/img/clubdeets.png", alt: "Assignments screen" },
+              // { src: "/img/clubdeets.png", alt: "Assignments screen" },
             ],
           },
           {
@@ -297,12 +297,12 @@ export const projects = [
             body: "Users can browse, join, or create reading clubs and share them with friends. A dedicated 'My Clubs' tab keeps joined clubs easily accessible.",
             images: [
               {
-                src: "/img/clubs.png",
+                src: "/img/BN_clubs.png",
                 alt: "Clubs screen",
               },
-              { src: "/img/myclubs.png", alt: "My clubs screen" },
-              { src: "/img/createclub.png", alt: "Create club screen" },
-              { src: "/img/clubcreateddeets.png", alt: "Club details screen" },
+              // { src: "/img/myclubs.png", alt: "My clubs screen" },
+              // { src: "/img/createclub.png", alt: "Create club screen" },
+              // { src: "/img/clubcreateddeets.png", alt: "Club details screen" },
             ],
           },
           {
@@ -310,18 +310,18 @@ export const projects = [
             body: "A personal digital library organised into shelves: Currently Reading, Want to Read, and Completed. Users can also import libraries from other platforms to keep their collections synchronised when transitioning to Book Nook.",
             images: [
               {
-                src: "/img/mybooksempty.png",
-                alt: "My books emty state",
+                src: "/img/BN_mybooks.png",
+                alt: "My books screen",
               },
-              { src: "/img/importing.png", alt: "Importing library" },
-              { src: "/img/libraryimported.png", alt: "Library imported" },
+              // { src: "/img/importing.png", alt: "Importing library" },
+              // { src: "/img/libraryimported.png", alt: "Library imported" },
             ],
           },
         ],
       },
     ],
     figmaEmbed:
-      "https://embed.figma.com/proto/GQWnAFzjfs9TRNp70Ou7w1/Booknook?node-id=1-1272&p=f&viewport=418%2C401%2C0.07&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1267&show-proto-sidebar=1&page-id=0%3A1&embed-host=share",
+      "https://embed.figma.com/proto/GQWnAFzjfs9TRNp70Ou7w1/Booknook?node-id=1-1272&viewport=205%2C417%2C0.1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1267&show-proto-sidebar=1&page-id=0%3A1&embed-host=share",
     conclusion:
       "Although this project didn’t involve a deep dive into the UX process, as my focus was on refining my Figma skills and building a design system from scratch, it still played an important role in my UI learning journey. \n\nIt was especially memorable because I got to work on a subject I’m passionate about, which made the entire design process both engaging and enjoyable.",
   },

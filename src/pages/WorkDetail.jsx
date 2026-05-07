@@ -290,10 +290,10 @@ function SectionImages({ project, sectionIndex }) {
     if (sectionIndex === 0)
       return (
         <div
-          className="case__img-row case__img-row--2"
+          className="case__img-row case__img-row--3"
           aria-label="Low fidelity wireframes"
         >
-          <img src="/img/booklf.png" alt="Smart Match improvement" />
+          <img src="/img/BN_lowfidelity.png" alt="BookNook lowfidelity" />
         </div>
       );
     if (sectionIndex === 1)
@@ -302,8 +302,8 @@ function SectionImages({ project, sectionIndex }) {
           className="case__img-row case__img-row--3"
           aria-label="Product research"
         >
-          <img src="/img/goodreads1.PNG" alt="Goodreads home screen" />
-          <img src="/img/goodreads2.PNG" alt="Goodreads discover screen" />
+          <img src="/img/BN_productresearch.png" alt="Goodreads" />
+          {/* <img src="/img/goodreads2.PNG" alt="Goodreads discover screen" /> */}
         </div>
       );
     if (sectionIndex === 2)
@@ -312,8 +312,8 @@ function SectionImages({ project, sectionIndex }) {
           className="case__img-row case__img-row--3"
           aria-label="Design System"
         >
-          <img src="/img/bookcolourpalette.png" alt="Colour Palette" />
-          <img src="/img/bookdesignsystem.png" alt="Design System" />
+          <img src="/img/BN_DS.png" alt="Design SYstem" />
+          {/* <img src="/img/bookdesignsystem.png" alt="Design System" /> */}
         </div>
       );
   }
