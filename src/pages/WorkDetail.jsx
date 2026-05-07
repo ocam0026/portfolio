@@ -221,20 +221,20 @@ function SectionImages({ project, sectionIndex }) {
     if (sectionIndex === 0)
       return (
         <div
-          className="case__img-row case__img-row--2"
+          className="case__img-row case__img-row--3"
           aria-label="User personas"
         >
-          <img src="/img/annie.png" alt="Student persona" />
-          <img src="/img/zita.png" alt="Tutor persona" />
+          <img src="/img/Mentora_personas.png" alt="Primary and secondary personas" />
+          {/* <img src="/img/zita.png" alt="Tutor persona" /> */}
         </div>
       );
     if (sectionIndex === 1)
       return (
         <>
           <div className="case__img-row" aria-label="Product research">
-            <div className="case__img-row case__img-row--2">
-              <img src="/img/preply.png" alt="Preply" />
-              <img src="/img/udemy.png" alt="Udemy" />
+            <div className="case__img-row case__img-row--3">
+              <img src="/img/Mentora_productresearch.png" alt="Product research" />
+              {/* <img src="/img/udemy.png" alt="Udemy" /> */}
             </div>
           </div>
         </>
@@ -245,44 +245,44 @@ function SectionImages({ project, sectionIndex }) {
           className="case__img-row case__img-row--3"
           aria-label="Information Architecture"
         >
-          <img src="/img/IAStudents.png" alt="IA Students" />
-          <img src="/img/IATutors.png" alt="IA Tutors" />
+          <img src="/img/Mentora_IA.png" alt="IA Students and Tutors" />
+          {/* <img src="/img/IATutors.png" alt="IA Tutors" /> */}
         </div>
       );
     if (sectionIndex === 3)
       return (
         <div
-          className="case__img-row case__img-row--2"
+          className="case__img-row case__img-row--3"
           aria-label="Low Fidelity"
         >
-          <img src="/img/lowfidelity1.png" alt="Students low fidelity" />
-          <img src="/img/lowfidelity2.png" alt="Tutors low fidelity" />
+          <img src="/img/Mentora_lowfidelity.png" alt="Low fidelity wireframes" />
+          {/* <img src="/img/lowfidelity2.png" alt="Tutors low fidelity" /> */}
         </div>
       );
     if (sectionIndex === 4)
       return (
-        <div className="case__img-row case__img-row--2" aria-label="Wireframes">
-          <img src="/img/mentoraw1.png" alt="Tutors mid fidelity" />
-          <img src="/img/mentoraw2.png" alt="Tutor details mid fidelity" />
-          <img src="/img/mentoraw3.png" alt="Tutor dashboard mid fidelity" />
+        <div className="case__img-row case__img-row--3" aria-label="Wireframes">
+          <img src="/img/Mentora_wireframes.png" alt="Mid fidelity wireframes" />
+          {/* <img src="/img/mentoraw2.png" alt="Tutor details mid fidelity" />
+          <img src="/img/mentoraw3.png" alt="Tutor dashboard mid fidelity" /> */}
         </div>
       );
     if (sectionIndex === 5)
       return (
-        <div className="case__img-row case__img-row--2" aria-label="Wireframes">
-          <img src="/img/mentoracp.png" alt="Colour palette" />
-          <img src="/img/mentorads.png" alt="Design System" />
+        <div className="case__img-row case__img-row--3" aria-label="Design System">
+          <img src="/img/Mentora_DS.png" alt="Design System" />
+          {/* <img src="/img/mentorads.png" alt="Design System" /> */}
         </div>
       );
-    if (sectionIndex === 6)
-      return (
-        <div
-          className="case__img-row case__img-row--2"
-          aria-label="Usability testing and improvements"
-        >
-          <img src="/img/mentoraimprov.png" alt="Smart Match improvement" />
-        </div>
-      );
+    // if (sectionIndex === 6)
+      // return (
+        // <div
+        //   className="case__img-row case__img-row--2"
+        //   aria-label="Usability testing and improvements"
+        // >
+        //   <img src="/img/mentoraimprov.png" alt="Smart Match improvement" />
+        // </div>
+      // );
   }
 
   // Book Nook

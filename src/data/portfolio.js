@@ -209,10 +209,10 @@ export const projects = [
             name: "Tutors / Dashboard",
             body: "Tutors is the main screen on the student's version, here students can browse for tutors, see their details and use the Smart Match feature, which is AI powered and allows them to input their personal schedule, the subject they need a tutor for and any additional details to find the perfect match for them in seconds. This solves the primary user's problem statement. \n\n For tutors, the main screen is Dashboard, here is where they see information that is relevant to them like their earnings, number of students, upcoming sessions and session requests; additionally, they have quick access to creating a new course.",
             images: [
-              { src: "/img/tutors.png", alt: "Tutors screen" },
-              { src: "/img/smartmatch.png", alt: "Smart Match feature" },
-              { src: "/img/tutordeets.png", alt: "Tutor details screen" },
-              { src: "/img/tutordashboard.png", alt: "Tutor dashboard" },
+              { src: "/img/Tutors_dashboard.png", alt: "Tutors and dashboard screens" },
+              // { src: "/img/smartmatch.png", alt: "Smart Match feature" },
+              // { src: "/img/tutordeets.png", alt: "Tutor details screen" },
+              // { src: "/img/tutordashboard.png", alt: "Tutor dashboard" },
             ],
           },
           {
@@ -220,12 +220,12 @@ export const projects = [
             body: "Students track progress and analytics on the Dashboard with quick access to assignments and active sessions. Tutors manage their course catalogue on the Courses screen, creating, publishing, or saving courses as drafts.",
             images: [
               {
-                src: "/img/studentdashboard.png",
+                src: "/img/Dashboard_courses.png",
                 alt: "Student dashboard screen",
               },
-              { src: "/img/assignments.png", alt: "Assignments screen" },
-              { src: "/img/tutorcourses.png", alt: "Tutor courses" },
-              { src: "/img/createcourse.png", alt: "Create course form" },
+              // { src: "/img/assignments.png", alt: "Assignments screen" },
+              // { src: "/img/tutorcourses.png", alt: "Tutor courses" },
+              // { src: "/img/createcourse.png", alt: "Create course form" },
             ],
           },
           {
@@ -233,12 +233,12 @@ export const projects = [
             body: "Students view session details, activities, recordings, and study materials for each course, additionaly, they can message their tutor directly. Tutors mirror this on My Students, monitoring session completion and communicating with their learners.",
             images: [
               {
-                src: "/img/mycourses.png",
+                src: "/img/Courses_students.png",
                 alt: "My courses screen",
               },
-              { src: "/img/mycoursesdeets.png", alt: "Course details screen" },
-              { src: "/img/mycoursesmessage.png", alt: "Tutor message" },
-              { src: "/img/mystudents.png", alt: "My students screen" },
+              // { src: "/img/mycoursesdeets.png", alt: "Course details screen" },
+              // { src: "/img/mycoursesmessage.png", alt: "Tutor message" },
+              // { src: "/img/mystudents.png", alt: "My students screen" },
             ],
           },
         ],
